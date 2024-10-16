@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    background-color: white;
+    padding-bottom: 6rem;
+    
+}
+
+.navBar {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    max-height: 96px;
+    align-items: center;
+    
+
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 1rem;
+    font-family: Quicksand;
+}
+
+.botonPrincipal {
+    background-color:#365902;
+    border-radius: 30px;
+    padding: 16px 24px;
+    color:white;
+    font-size: 1rem;
+    border: 1px;
+    text-decoration: none;
+    font-family: Quicksand;
+
+    
+}
+
+body {
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+.card-body {
+    box-shadow: 5px 5px 50px #21212123;
+    border-radius: 30px;
+}
+
+.account-block {
+    padding: 0;
+    background-image: url(../assets/img/form-registro/side-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.mb-5 h1 {
+    font-family: Quicksand;
+    font-size: 2rem;
+    color: #212121;
+    font-weight: 800;
+}
+
+.p-5 p {
+    font-family: Quicksand;
+}
+
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.account-block .account-testimonial {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+.text-theme {
+    color: #212121 !important;
+}
+.btn-theme {
+    background-color: #365902;
+    border-color: #365902;
+    color: #fff;
+    border-radius: 30px;
+    padding: 16px 24px;
+    font-size: 1rem;
+    font-family: Quicksand;
+}
+
+.form-group label {
+    font-family: Quicksand;
+    font-size: 14px;
+}
+
+.account-testimonial h4 {
+    font-family: Quicksand;
+    font-size: 2rem;
+    color: #212121;
+    font-weight: 800;
+}
+
+.account-testimonial p {
+    font-family: Quicksand;
+    font-size: 1rem;
+    color: #212121;
+    font-weight: 300;
+}
+
+.text-muted .text-center .mt-3 .mb-0 p {
+    font-family: Quicksand;
+    font-size: 1rem;
+    color: #212121;
+    font-weight: 300;
+}
+
+.login a {
+    font-family: Quicksand;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    gap: 16px; 
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 6rem;
+}
+
+.logo {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    padding-bottom: 3rem;
+}
+
+.datos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+    margin: 0px;
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 4;
+    padding-top: 1.5rem;
+}
+
+.datos h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.datos p {
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+
+.containerFollow {
+    align-items: start;
+    grid-column: 9 / span 2;
+    grid-row: 4 / span 1;
+    text-align: center;
+
+}
+.descargaDely {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 9 / span 2;
+    grid-row: 2 / span 1;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.descargaDely h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500; 
+}
+
+.botonesTienda {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-column: 9 / span 2;
+    grid-row: 3 / span 1;
+    gap: 16px;
+}
+.descargaApple {
+    grid-column: 11 / span 2;
+    grid-row: 3 / span 2;
+    text-align: center;
+}
+
+.descargaAndroid {
+    grid-column: 9 / span 2;
+    grid-row: 3 / span 2;
+    text-align: center;
+}
+
+.sigue-dely {
+    grid-column: 9 / span 2;
+    grid-row: 4 / span 1;
+    text-align: center;
+}
+
+.sigue-dely h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.redes-sociales {
+    grid-column: 9 / span 2;
+    grid-row: 5 / span 1;
+    display: flex;
+    gap: 16px;
+    justify-content:flex-start;
+    padding-top: 1rem;
+}
+
+.redes-sociales button {
+    margin: 0 5px;
+}
+
+.divider {
+    grid-column: 1 / span 12;
+    grid-row: 6 / span 1;
+    background-color: #ccc;
+    height: 1px;
+    
+}
+
+.derechos {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    text-align: left;
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: .875rem;
+}
+
+.politica {
+    grid-column: 11 / span 2;
+    grid-row: 6 / span 1;
+    text-align: right;
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: .875rem;
+}

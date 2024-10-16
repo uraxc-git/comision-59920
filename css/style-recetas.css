@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    
+}
+
+.navBar {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    max-height: 96px;
+    align-items: center;
+    
+
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 1rem;
+    font-family: Quicksand;
+}
+
+.botonPrincipal {
+    background-color:#365902;
+    border-radius: 30px;
+    padding: 16px 24px;
+    color:white;
+    font-size: 1rem;
+    border: 1px;
+    text-decoration: none;
+    font-family: Quicksand;
+
+    
+}
+
+.populares h2{
+    font-family: Quicksand;
+    color: #212121;
+    font-size: 2.5625rem;
+    padding-left: 145px;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+
+.container-Cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    padding-bottom: 6rem;
+}
+
+/* bloque de cards nuevas*/
+.container-card {
+    padding: 16px;
+    width: 282px;
+    height: 361px;
+    border-radius: 20px;
+    background-color: #F1F1F1;
+    transition: all 400ms ease;
+}
+
+.container-card:hover{
+    box-shadow: 5px 5px 20px rgba (0,0,0,2);
+    transform:translateY(-3%);
+}
+.container-interno {
+    width: 250px;
+    height: 329px;
+    padding: 16px;
+    margin: 0 auto; 
+}
+
+.imagen {
+    width: 100%;
+    height: 198px;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.container-Cards h3{
+    font-family: Quicksand;
+    font-size: 1.4375rem;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 10px;
+}
+/*
+.titulo {
+    font-family: Quicksand;
+    font-size: 1.4375rem;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 10px;
+}*/
+
+.container-calificacion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container-calificacion {
+    font-family: Quicksand;
+    font-size: .875rem;
+}
+
+.container-calificacion div p {
+    font-size: 14px;
+}
+
+/* cierre de bloque */
+
+.recetasIngredientes h2 {
+    font-family: Quicksand;
+    color: #212121;
+    font-size: 2.5625rem;
+    padding-left: 145px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.containerCardingredientes {
+
+    background-color:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.cardIngredientes {
+    background-color: none;
+    width: 180px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    transition: all 400ms ease;
+}
+
+.cardIngredientes:hover {
+    box-shadow: 5px 5px 20px rgba (0,0,0,2);
+    transform:translateY(-3%);
+}
+
+.cardIngredientes1 p {
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cardIngredientes2 p {
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cardIngredientes3 p {
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cardIngredientes4 p {
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cardIngredientes5 p {
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    gap: 16px; 
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 6rem;
+}
+
+.logo {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    padding-bottom: 3rem;
+}
+
+.datos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+    margin: 0px;
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 4;
+    padding-top: 1.5rem;
+}
+
+.datos h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.datos p {
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+
+.containerFollow {
+    align-items: start;
+    grid-column: 9 / span 2;
+    grid-row: 4 / span 1;
+    text-align: center;
+
+}
+.descargaDely {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 9 / span 2;
+    grid-row: 2 / span 1;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.descargaDely h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500; 
+}
+
+.botonesTienda {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-column: 9 / span 2;
+    grid-row: 3 / span 1;
+    gap: 16px;
+}
+.descargaApple {
+    grid-column: 11 / span 2;
+    grid-row: 3 / span 2;
+    text-align: center;
+}
+
+.descargaAndroid {
+    grid-column: 9 / span 2;
+    grid-row: 3 / span 2;
+    text-align: center;
+}
+
+.sigue-dely {
+    grid-column: 9 / span 2;
+    grid-row: 4 / span 1;
+    text-align: center;
+}
+
+.sigue-dely h2 {
+    font-family: Quicksand;
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.redes-sociales {
+    grid-column: 9 / span 2;
+    grid-row: 5 / span 1;
+    display: flex;
+    gap: 16px;
+    justify-content:flex-start;
+    padding-top: 1rem;
+}
+
+.redes-sociales button {
+    margin: 0 5px;
+}
+
+.divider {
+    grid-column: 1 / span 12;
+    grid-row: 6 / span 1;
+    background-color: #ccc;
+    height: 1px;
+    
+}
+
+.derechos {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    text-align: left;
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: .875rem;
+}
+
+.politica {
+    grid-column: 11 / span 2;
+    grid-row: 6 / span 1;
+    text-align: right;
+    padding-top: 16px;
+    font-family: Quicksand;
+    font-size: .875rem;
+}
+
+@media (max-width: 744px) {
+
+    .container-Cards {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .populares h2 {
+
+        font-family: Quicksand;
+        color: #212121;
+        font-size: 2rem;
+        padding-left: 50px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+    }
+
+    .recetasIngredientes h2 {
+        font-family: Quicksand;
+        color: #212121;
+        font-size: 2rem;
+        padding-left: 50px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, 50px);
+        gap: 16px;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 6rem;
+    }
+
+    .datos {
+        display: flex;
+        justify-content: flex-start;
+        gap: 48px;
+        margin: 0px;
+        grid-column: 1 / span 12;
+        grid-row: 2 / span 4;
+        padding-top: 1.5rem;
+    }
+
+    .descargaDely {
+        display: flex;
+        justify-content: flex-start;
+        grid-column: 1 / span 3;
+        grid-row: 5 / span 1;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+
+    .botonesTienda {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        grid-column: 1 / span 2;
+        grid-row: 6 / span 1;
+        gap: 16px;
+    }
+
+    .containerFollow {
+        align-items: start;
+        grid-column: 1 / span 3;
+        grid-row: 7 / span 1;
+        text-align: center;
+    
+    }
+
+    .sigue-dely {
+        grid-column: 1 / span 2;
+        grid-row: 8 / span 1;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        grid-column: 1 / span 2;
+        grid-row: 9 / span 1;
+        display: flex;
+        gap: 16px;
+        justify-content:flex-start;
+        padding-top: 1rem;
+    }
+
+    .redes-sociales button {
+        margin: 0 5px;
+    }
+    
+    .divider {
+        grid-column: 1 / span 12;
+        grid-row: 9 / span 1;
+        background-color: #ccc;
+        height: 1px;
+        
+    }
+    
+    .derechos {
+        grid-column: 1 / span 2;
+        grid-row: 9 / span 1;
+        text-align: left;
+        padding-top: 16px;
+        font-family: Quicksand;
+        font-size: .875rem;
+    }
+    
+    .politica {
+        grid-column: 11 / span 2;
+        grid-row: 9 / span 1;
+        text-align: right;
+        padding-top: 16px;
+        font-family: Quicksand;
+        font-size: .875rem;
+    }
+
+
+}
+
+@media (max-width:320px) {
+
+        main {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .container-Cards {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(2, auto);
+        gap: 16px;
+        max-width: 288px; 
+        margin: 0 auto; 
+        align-items: center;
+        padding-left: 195px;
+    }
+
+    .card1 {
+        grid-column: 1 / span 2; 
+    }
+    
+    .card2 {
+        grid-column: 3 /span 2; 
+    }
+    
+    .card3 {
+        grid-column: 1 /span 2; 
+        grid-row: 2 / span 2;
+    }
+    
+    .card4 {
+        grid-column: 3 /span 2; 
+        grid-row: 2 / span 2;
+    }
+
+    .container-card {
+        padding: 16px;
+        width: 200px;
+        height: 235px;
+        border-radius: 20px;
+        background-color: #F1F1F1;
+    }
+    
+    .container-interno {
+        width: 180px;
+        height: 219px;
+        padding: 16px;
+        margin: 0 auto; 
+    }
+    
+    .imagen {
+        width: 100%;
+        height: 95px;
+        border-radius: 10px;
+        object-fit: cover; 
+    }
+    
+    .titulo {
+        font-family: Quicksand;
+        font-size: 1rem;
+        text-align: left;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    
+    .container-calificacion {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .container-calificacion {
+        font-family: Quicksand;
+        font-size: .875rem;
+    }
+    
+    .container-calificacion div p {
+        font-size: 14px;
+    }
+
+    .populares h2 {
+
+        font-family: Quicksand;
+        color: #212121;
+        font-size: 1.4375rem;
+        padding-left: 16px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .containerCardingredientes {
+
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(4, auto);
+        gap: 16px;
+        padding-left: 20px;
+    }
+
+    .cardIngredientes1 {
+        grid-column: 1 /span 2; 
+    }
+
+    .cardIngredientes2 {
+        grid-column: 3 /span 2; 
+    }
+
+    .cardIngredientes3 {
+        grid-column: 1 /span 2; 
+        grid-row: 2 / span 2;
+    }
+
+    .cardIngredientes4 {
+        grid-column: 3 /span 2; 
+        grid-row: 2 / span 2;
+    }
+
+    .cardIngredientes5 {
+        grid-column: 1 /span 2; 
+        grid-row: 4 / span 2;
+    }
+
+
+
+    .recetasIngredientes h2 {
+        font-family: Quicksand;
+        color: #212121;
+        font-size: 1.4375rem;
+        padding-left: 16px;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: repeat(13, 50px);
+        gap: 16px;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 6rem;
+    }
+
+    .datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 48px;
+        margin: 0px;
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 4;
+        padding-top: 1.5rem;
+    }
+
+    .descargaDely {
+        display: flex;
+        justify-content: flex-start;
+        grid-column: 1 / span 3;
+        grid-row: 9 / span 1;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+
+    .botonesTienda {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        grid-column: 1 / span 2;
+        grid-row: 10 / span 1;
+        gap: 16px;
+    }
+
+    .containerFollow {
+        align-items: start;
+        grid-column: 1 / span 3;
+        grid-row: 11 / span 1;
+        text-align: center;
+    
+    }
+
+    .sigue-dely {
+        grid-column: 1 / span 2;
+        grid-row: 8 / span 1;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        grid-column: 1 / span 2;
+        grid-row: 9 / span 1;
+        display: flex;
+        gap: 16px;
+        justify-content:flex-start;
+        padding-top: 1rem;
+    }
+
+    .redes-sociales button {
+        margin: 0 5px;
+    }
+    
+    .divider {
+        grid-column: 1 / span 12;
+        grid-row: 13 / span 1;
+        background-color: #ccc;
+        height: 1px;
+        
+    }
+    
+    .derechos {
+        grid-column: 1 / span 2;
+        grid-row: 13 / span 2;
+        text-align: left;
+        padding-top: 16px;
+        font-family: Quicksand;
+        font-size: .875rem;
+    }
+    
+    .politica {
+        grid-column: 3 / span 2;
+        grid-row: 13 / span 1;
+        text-align: right;
+        padding-top: 16px;
+        font-family: Quicksand;
+        font-size: .875rem;
+    }
+}
